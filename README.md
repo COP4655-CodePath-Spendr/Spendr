@@ -67,7 +67,7 @@ The Spendr app will allow users to budget their income in a simple and straightf
 
 **Tab Navigation** (Tab to Screen)
 
-* Dashboard screen
+* TBD
 
 **Flow Navigation** (Screen to Screen)
 
