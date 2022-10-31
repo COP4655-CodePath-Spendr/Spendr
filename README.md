@@ -86,4 +86,5 @@ The Spendr app will allow users to budget their income in a simple and straightf
 <img src="https://i.imgur.com/FQSvAMj.jpg" height=200> <img src="https://i.imgur.com/j0ndyqI.jpg" height=200> <img src="https://i.imgur.com/SSVkDfh.jpg" height=200> <img src="https://i.imgur.com/Z5DZMDC.jpg" height=200> <img src="https://i.imgur.com/6hQ7BZK.jpg" height=200> <img src="https://i.imgur.com/1NSAqqi.jpg" height=200> <img src="https://i.imgur.com/axackkn.jpg" height=200> <img src="https://i.imgur.com/OxbfwHO.jpg" height=200> <img src="https://i.imgur.com/skD4Y6u.jpg" height=200> <img src="https://i.imgur.com/0B5pQlN.jpg" height=200> <img src="https://i.imgur.com/caM9AT8.jpg" height=200>
 
 ### [BONUS] Interactive Prototype
-<a href="https://www.figma.com/proto/CyQlEpk2HPmiVQRvLIRjU5/Spendr?node-id=0%3A1&scaling=scale-down&starting-point-node-id=1%3A2"> Prototype Link </a>
+<a href="https://www.figma.com/proto/CyQlEpk2HPmiVQRvLIRjU5/Spendr?node-id=0%3A1&scaling=scale-down&starting-point-node-id=1%3A2"> Prototype Link </a><br>
+<img src="https://i.imgur.com/faWGUa1.gif" width=320>
