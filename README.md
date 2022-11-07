@@ -88,3 +88,15 @@ The Spendr app will allow users to budget their income in a simple and straightf
 ### [BONUS] Interactive Prototype
 <a href="https://www.figma.com/proto/CyQlEpk2HPmiVQRvLIRjU5/Spendr?node-id=0%3A1&scaling=scale-down&starting-point-node-id=1%3A2"> Prototype Link </a><br>
 <img src="https://i.imgur.com/faWGUa1.gif" width=320>
+
+### Models
+
+|Property | Type | Description |
+| -------- | -------- | -------- |
+| objectID     | String    |  Unique ID for the category |
+| author | Pointer to User | Category author |
+| category | File | Category that user creates |
+| caption | String | Category caption by author |
+| budget | Number | Amount user delegates to a category |
+| createdAt | DateTime | Date when category is created
+| updatedAt | DateTime | Date when category is last updated |
