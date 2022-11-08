@@ -98,15 +98,3 @@ The Spendr app will allow users to budget their income in a simple and straightf
 | name | String | Category name |
 | date | DateTime | Date when category was created |
 | notes | String | Additional category information |
-
-### Networking
-**List of networks request by screen**
-
-* Home screen
-    * (Read/GET) Retrieve the pie chart
-* Create category screen
-    * (Create/POST) Create a new category object
-* Individual category 
-    * (Read/GET) View category object details
-    * (Update/PUT) Update category budget amount
-    * (Delete) Delete existing category
