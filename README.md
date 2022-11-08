@@ -93,6 +93,7 @@ The Spendr app will allow users to budget their income in a simple and straightf
 |Property | Type | Description |
 | -------- | -------- | -------- |
 | author | Pointer to User | Category author |
+| monthlyIncome | Number | User's total monthly income |
 | expenseName | String | Name of expense |
 | expenseForCategory     | String    | What category expense should be added to |
 | expenseAmount | Number | Amount user delegates to an expense |
