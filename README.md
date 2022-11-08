@@ -189,7 +189,7 @@ query.getObjectInBackground(withId: "xWMyZEGZ") { (gameScore: PFObject?, error: 
 ```
 
 * Individual category screen
-   * (Delete) Delete existing category
+   * (Delete) Delete existing category/expense
 
 ```
 PFObject.deleteAll(inBackground: objectArray) { (succeeded, error) in
