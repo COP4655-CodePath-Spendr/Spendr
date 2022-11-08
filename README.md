@@ -102,3 +102,101 @@ The Spendr app will allow users to budget their income in a simple and straightf
 | categoryName | String | Name of category |
 | categoryColor | Color | Color for category |
 | categoryNotes | String | Additional category information|
+
+## Networking
+* Dashboard screen
+   * (Read/GET) Query the pie chart based on overall income
+
+```
+let query = PFQuery(className:"Category")
+query.whereKey("categoryName", equalTo:"categoryType")
+query.findObjectsInBackground { (objects: [PFObject]?, error: Error?) in
+    if let error = error {
+        // Log details of the failure
+        print(error.localizedDescription)
+    } else if let objects = objects {
+        // The find succeeded.
+        print("Successfully retrieved \(objects.count) scores.")
+        // Do something with the found objects
+        for object in objects {
+            print(object.objectId as Any)
+        }
+    }
+}
+```
+
+* Category/Expense creation screen
+   * (Create/POST) Create and save a new category
+
+```
+PFObject *category = [PFObject objectWithClassName:@"Category"];
+category[@"name"] = @Auto;
+category[@"color"] = @#000000;
+category[@"notes"] = @"Monthly car payment";
+[category saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+  if (succeeded) {
+    // The object has been saved.
+  } else {
+    // There was a problem, check error.description
+  }
+}];
+```
+
+* Category Selection Screen
+   * (Read/GET) Pull up all of user's created categories
+
+```
+let query = PFQuery(className:"Category")
+query.getObjectInBackground(withId: "xWMyZEGZ") { (category, error) in
+    if error == nil {
+        // Success!
+    } else {
+        // Fail!
+    }
+}
+```
+
+
+* Individual category screen
+    * (Read/GET) Pull up all of user's created expenses for that category
+
+```
+let query = PFQuery(className:"Expense")
+query.getObjectInBackground(withId: "xWMyZEGZ") { (category, error) in
+    if error == nil {
+        // Success!
+    } else {
+        // Fail!
+    }
+}
+```
+
+* Individual category screen
+   * (Update/PUT) Update category/expense information
+
+```
+let query = PFQuery(className:"Category")
+query.getObjectInBackground(withId: "xWMyZEGZ") { (gameScore: PFObject?, error: Error?) in
+    if let error = error {
+        print(error.localizedDescription)
+    } else if let category = category {
+        category[@"name"] = @Auto;
+        category[@"color"] = @#000000;
+        category[@"notes"] = @"Monthly car payment";
+        category.saveInBackground()
+    }
+}
+```
+
+* Individual category screen
+   * (Delete) Delete existing category
+
+```
+PFObject.deleteAll(inBackground: objectArray) { (succeeded, error) in
+    if (succeeded) {
+        // The array of objects was successfully deleted.
+    } else {
+        // There was an error. Check the errors localizedDescription.
+    }
+}
+```
