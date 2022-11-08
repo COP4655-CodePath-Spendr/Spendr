@@ -99,3 +99,15 @@ The Spendr app will allow users to budget their income in a simple and straightf
 | budget | Number | Amount user delegates to a category |
 | createdAt | DateTime | Date when category is created
 | updatedAt | DateTime | Date when category is last updated |
+
+### Networking
+**List of networks request by screen**
+
+* Home screen
+    * (Read/GET) Query all posts where user is author
+* Create category screen
+    * (Create/POST) Create a new category object
+* Individual category 
+    * (Read/GET) View category object details
+    * (Update/PUT) Update category budget amount
+    * (Delete) Delete existing category
