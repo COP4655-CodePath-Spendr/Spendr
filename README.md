@@ -91,6 +91,7 @@ The Spendr app will allow users to budget their income in a simple and straightf
 
 ### Models
 |Property | Type | Description |
+| -------- | -------- | -------- |
 | author | Pointer to User | Category author |
 | expenseName | String | Name of expense |
 | expenseForCategory     | String    |  Category type |
