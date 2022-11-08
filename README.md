@@ -104,7 +104,7 @@ The Spendr app will allow users to budget their income in a simple and straightf
 **List of networks request by screen**
 
 * Home screen
-    * (Read/GET) Query all posts where user is author
+    * (Read/GET) Retrieve the pie chart
 * Create category screen
     * (Create/POST) Create a new category object
 * Individual category 
