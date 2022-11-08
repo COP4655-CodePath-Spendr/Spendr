@@ -100,5 +100,5 @@ The Spendr app will allow users to budget their income in a simple and straightf
 | expenseDate | DateTime | Date when expense was logged |
 | expenseNotes | String | Additional expense information |
 | categoryName | String | Name of category |
-| categoryColor | String | Color for category |
+| categoryColor | Color | Color for category |
 | categoryNotes | String | Additional category information|
