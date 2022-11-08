@@ -96,7 +96,10 @@ The Spendr app will allow users to budget their income in a simple and straightf
 | objectID     | String    |  Unique ID for the category |
 | author | Pointer to User | Category author |
 | category | File | Category that user creates |
-| budget | Number | Amount user delegates to a category |
+| amount | Number | Amount user delegates to a category |
+| name | String | Category name |
+| date | DateTime | Date when category was created |
+| notes | String | Additional category information |
 
 ### Networking
 **List of networks request by screen**
