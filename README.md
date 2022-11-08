@@ -93,7 +93,7 @@ The Spendr app will allow users to budget their income in a simple and straightf
 |Property | Type | Description |
 | -------- | -------- | -------- |
 | author | Pointer to User | Category author |
-| categoryID     | String    |  Unique ID for the category|
+| category     | String    |  Unique name for the category|
 | amount | Number | Amount user delegates to a category |
 | name | String | Category name |
 | date | DateTime | Date when category was created |
