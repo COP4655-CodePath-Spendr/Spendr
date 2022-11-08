@@ -90,12 +90,10 @@ The Spendr app will allow users to budget their income in a simple and straightf
 <img src="https://i.imgur.com/faWGUa1.gif" width=320>
 
 ### Models
-
 |Property | Type | Description |
 | -------- | -------- | -------- |
-| objectID     | String    |  Unique ID for the category |
 | author | Pointer to User | Category author |
-| category | File | Category that user creates |
+| categoryID     | String    |  Unique ID for the category|
 | amount | Number | Amount user delegates to a category |
 | name | String | Category name |
 | date | DateTime | Date when category was created |
