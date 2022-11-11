@@ -7,6 +7,7 @@
 
 import UIKit
 import Parse
+import Charts
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 

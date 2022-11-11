@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		6642E7D7291CC078000F3FA6 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6642E7D6291CC078000F3FA6 /* DashboardViewController.swift */; };
+		664A2269291ED1A200E24974 /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A2268291ED1A200E24974 /* AddExpenseViewController.swift */; };
+		664A226B291ED26200E24974 /* AddCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A226A291ED26200E24974 /* AddCategoryViewController.swift */; };
+		664BC26F291EBC68006C851D /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664BC26E291EBC68006C851D /* Charts.framework */; };
+		66CB9876291F45EB00F3FBF4 /* ViewCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CB9875291F45EB00F3FBF4 /* ViewCategoryViewController.swift */; };
 		66DC16B329122890006D6C66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DC16B229122890006D6C66 /* AppDelegate.swift */; };
 		66DC16B529122890006D6C66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DC16B429122890006D6C66 /* SceneDelegate.swift */; };
 		66DC16B729122890006D6C66 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DC16B629122890006D6C66 /* LoginViewController.swift */; };
@@ -17,6 +21,7 @@
 		66DC16CA29122891006D6C66 /* SpendrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DC16C929122891006D6C66 /* SpendrTests.swift */; };
 		66DC16D429122891006D6C66 /* SpendrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DC16D329122891006D6C66 /* SpendrUITests.swift */; };
 		66DC16D629122891006D6C66 /* SpendrUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DC16D529122891006D6C66 /* SpendrUITestsLaunchTests.swift */; };
+		66E56594291E0FA500B6C385 /* AddIncomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E56593291E0FA500B6C385 /* AddIncomeViewController.swift */; };
 		6FC7A2B575948C0617B5A33A /* Pods_Spendr_SpendrUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C1F89E5FA2D863F30A714C6 /* Pods_Spendr_SpendrUITests.framework */; };
 		8004079DA851127D46EFFBE1 /* Pods_Spendr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 128127FF8AD94EB3C264C25A /* Pods_Spendr.framework */; };
 		B5F6E3A5344F04582981359B /* Pods_SpendrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7109FA97FD63AEF943C04CDD /* Pods_SpendrTests.framework */; };
@@ -48,6 +53,10 @@
 		34EFE01115FD1170AD9E3AE8 /* Pods-Spendr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spendr.debug.xcconfig"; path = "Target Support Files/Pods-Spendr/Pods-Spendr.debug.xcconfig"; sourceTree = "<group>"; };
 		39DFAAD03D5065868290B051 /* Pods-SpendrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpendrTests.release.xcconfig"; path = "Target Support Files/Pods-SpendrTests/Pods-SpendrTests.release.xcconfig"; sourceTree = "<group>"; };
 		6642E7D6291CC078000F3FA6 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		664A2268291ED1A200E24974 /* AddExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
+		664A226A291ED26200E24974 /* AddCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCategoryViewController.swift; sourceTree = "<group>"; };
+		664BC26E291EBC68006C851D /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = System/Library/Frameworks/Charts.framework; sourceTree = SDKROOT; };
+		66CB9875291F45EB00F3FBF4 /* ViewCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCategoryViewController.swift; sourceTree = "<group>"; };
 		66DC16AF29122890006D6C66 /* Spendr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spendr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66DC16B229122890006D6C66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66DC16B429122890006D6C66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +70,7 @@
 		66DC16CF29122891006D6C66 /* SpendrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpendrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66DC16D329122891006D6C66 /* SpendrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendrUITests.swift; sourceTree = "<group>"; };
 		66DC16D529122891006D6C66 /* SpendrUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendrUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		66E56593291E0FA500B6C385 /* AddIncomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIncomeViewController.swift; sourceTree = "<group>"; };
 		7109FA97FD63AEF943C04CDD /* Pods_SpendrTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpendrTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB1FDA13C559822525B4FE3 /* Pods-SpendrTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpendrTests.debug.xcconfig"; path = "Target Support Files/Pods-SpendrTests/Pods-SpendrTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				664BC26F291EBC68006C851D /* Charts.framework in Frameworks */,
 				8004079DA851127D46EFFBE1 /* Pods_Spendr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +107,7 @@
 		58473591A9286C4E5F224DA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				664BC26E291EBC68006C851D /* Charts.framework */,
 				128127FF8AD94EB3C264C25A /* Pods_Spendr.framework */,
 				2C1F89E5FA2D863F30A714C6 /* Pods_Spendr_SpendrUITests.framework */,
 				7109FA97FD63AEF943C04CDD /* Pods_SpendrTests.framework */,
@@ -131,6 +143,10 @@
 				66DC16B229122890006D6C66 /* AppDelegate.swift */,
 				66DC16B429122890006D6C66 /* SceneDelegate.swift */,
 				66DC16B629122890006D6C66 /* LoginViewController.swift */,
+				66E56593291E0FA500B6C385 /* AddIncomeViewController.swift */,
+				664A226A291ED26200E24974 /* AddCategoryViewController.swift */,
+				66CB9875291F45EB00F3FBF4 /* ViewCategoryViewController.swift */,
+				664A2268291ED1A200E24974 /* AddExpenseViewController.swift */,
 				6642E7D6291CC078000F3FA6 /* DashboardViewController.swift */,
 				66DC16B829122890006D6C66 /* Main.storyboard */,
 				66DC16BB29122890006D6C66 /* Assets.xcassets */,
@@ -188,6 +204,8 @@
 			dependencies = (
 			);
 			name = Spendr;
+			packageProductDependencies = (
+			);
 			productName = Spendr;
 			productReference = 66DC16AF29122890006D6C66 /* Spendr.app */;
 			productType = "com.apple.product-type.application";
@@ -263,6 +281,8 @@
 				Base,
 			);
 			mainGroup = 66DC16A629122890006D6C66;
+			packageReferences = (
+			);
 			productRefGroup = 66DC16B029122890006D6C66 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -409,9 +429,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66E56594291E0FA500B6C385 /* AddIncomeViewController.swift in Sources */,
+				664A2269291ED1A200E24974 /* AddExpenseViewController.swift in Sources */,
 				66DC16B729122890006D6C66 /* LoginViewController.swift in Sources */,
 				66DC16B329122890006D6C66 /* AppDelegate.swift in Sources */,
 				66DC16B529122890006D6C66 /* SceneDelegate.swift in Sources */,
+				664A226B291ED26200E24974 /* AddCategoryViewController.swift in Sources */,
+				66CB9876291F45EB00F3FBF4 /* ViewCategoryViewController.swift in Sources */,
 				6642E7D7291CC078000F3FA6 /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
