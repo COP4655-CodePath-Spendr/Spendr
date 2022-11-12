@@ -9,6 +9,7 @@ target 'Spendr' do
   pod 'Charts'
   pod 'Parse'
   pod 'AlamofireImage'
+  pod 'iOSDropDown', '~> 0.4'
 
   target 'SpendrTests' do
     inherit! :search_paths
