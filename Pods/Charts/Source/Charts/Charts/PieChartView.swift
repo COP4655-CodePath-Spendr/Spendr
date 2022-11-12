@@ -23,7 +23,7 @@ open class PieChartView: PieRadarChartViewBase
     private var _circleBox = CGRect()
     
     /// flag indicating if entry labels should be drawn or not
-    private var _drawEntryLabelsEnabled = true
+    private var _drawEntryLabelsEnabled = false
     
     /// array that holds the width of each pie-slice in degrees
     private var _drawAngles = [CGFloat]()

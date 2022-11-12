@@ -180,6 +180,27 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahy-0f-clL">
+                                <rect key="frame" x="129" y="454" width="233" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iik-XU-oXb">
+                                <rect key="frame" x="154" y="491" width="208" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7o-Ng-R5C">
+                                <rect key="frame" x="119" y="528" width="243" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CZF-CL-i9t"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -195,6 +216,9 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="budgetLabel" destination="N7o-Ng-R5C" id="d5c-V9-Qqr"/>
+                        <outlet property="expensesLabel" destination="Iik-XU-oXb" id="ZWm-b4-NTi"/>
+                        <outlet property="incomeLabel" destination="Ahy-0f-clL" id="klR-s2-l5v"/>
                         <outlet property="pieChart" destination="kEN-jt-KYJ" id="2Kt-fz-sl5"/>
                     </connections>
                 </viewController>
@@ -277,13 +301,14 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="qdQ-Zj-Qft">
                             <connections>
                                 <action selector="doneButton:" destination="G0h-yG-x3u" id="mgr-hC-dER"/>
+                                <segue destination="8bT-JX-7FW" kind="presentation" identifier="dashboardSegue" id="eaK-xr-DKO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="addExpenseStatus" destination="ZKg-2M-mfC" id="lZf-oH-UDE"/>
+                        <outlet property="categoryDropdown" destination="Gjb-fs-ckA" id="p5Q-eW-bCg"/>
                         <outlet property="newExpenseAmount" destination="em4-qB-NDn" id="XpT-Ns-2B1"/>
-                        <outlet property="newExpenseCategory" destination="Gjb-fs-ckA" id="0LL-Yh-dvd"/>
                         <outlet property="newExpenseDate" destination="y3f-Wa-9tX" id="5Vo-6M-prz"/>
                         <outlet property="newExpenseName" destination="AXR-AO-jpR" id="klY-jg-su8"/>
                         <outlet property="newExpenseNotes" destination="xbz-QF-3Z9" id="AbY-fE-P03"/>
@@ -309,7 +334,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8hY-eA-0lF">
-                                <rect key="frame" x="20" y="447" width="374" height="34"/>
+                                <rect key="frame" x="20" y="195" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -322,7 +347,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0q-SL-rOL">
-                                <rect key="frame" x="303" y="501" width="55" height="35"/>
+                                <rect key="frame" x="311" y="249" width="55" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.14901961389999999" green="0.32941177490000001" blue="0.53333336109999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
@@ -332,31 +357,12 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVa-Nj-EPw">
-                                <rect key="frame" x="20" y="508" width="262" height="21"/>
+                                <rect key="frame" x="20" y="256" width="262" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Month" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Moh-QL-Htb" customClass="JRDropDown">
-                                <rect key="frame" x="20" y="277" width="177" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="0.52981676749999995" green="0.71741474630000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedRowColor">
-                                        <color key="value" red="0.52981676749999995" green="0.71741474630000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="arrowSize">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSearchEnable" value="NO"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="itemsTintColor">
-                                        <color key="value" red="0.52981676749999995" green="0.71741474630000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VpO-wL-6eX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -370,6 +376,7 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="m3J-FO-JXH">
                             <connections>
                                 <action selector="doneButton:" destination="AT7-5G-Ytb" id="Ell-gv-p62"/>
+                                <segue destination="8bT-JX-7FW" kind="presentation" id="pQH-67-fOC"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -377,7 +384,6 @@
                         <outlet property="addIncomeStatusLabel" destination="fVa-Nj-EPw" id="UeO-yW-dlS"/>
                         <outlet property="incomeInput" destination="8hY-eA-0lF" id="S8m-7F-Dkm"/>
                         <outlet property="incomeLabel" destination="ybt-6D-QEv" id="fMK-ZE-omP"/>
-                        <outlet property="monthDropdown" destination="Moh-QL-Htb" id="nuz-Ra-gjd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dWa-HN-r46" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -580,6 +586,10 @@
             <point key="canvasLocation" x="3088" y="1020"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="UgJ-wK-81O"/>
+        <segue reference="pQH-67-fOC"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="spendr" width="734" height="204"/>
         <systemColor name="systemBackgroundColor">

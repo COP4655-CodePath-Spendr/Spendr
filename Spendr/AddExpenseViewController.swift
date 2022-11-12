@@ -16,10 +16,12 @@ class AddExpenseViewController: UIViewController {
     @IBOutlet weak var newExpenseNotes: UITextField!
     @IBOutlet weak var newExpenseDate: UITextField!
     @IBOutlet weak var newExpenseAmount: UITextField!
-    @IBOutlet weak var newExpenseCategory: UITextField!
     @IBOutlet weak var addExpenseStatus: UILabel!
     
-    var expenses = [PFObject]()
+    @IBOutlet weak var categoryDropdown: DropDown!
+    
+    var categories = PFObject(className: "Categories")
+    
     let expense = PFObject(className: "Expenses")
     
     override func viewDidLoad() {
@@ -28,26 +30,30 @@ class AddExpenseViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        categoryDropdown.optionArray = ["Food", "Home", "Auto", "Utilities", "Miscellaneous", "Other"]
+    }
+    
     
     @IBAction func addExpenseButton(_ sender: Any) {
+        
         expense["name"] = newExpenseName.text
-        expense["category"] = newExpenseCategory.text
+        expense["category"] = categoryDropdown.text
         expense["amount"] = Double(newExpenseAmount.text!)
         expense["date"] = newExpenseDate.text
         expense["notes"] = newExpenseNotes.text
         expense["user"] = PFUser.current()
         
-        expense.saveInBackground { (success, error) in
+        expense.saveInBackground { [self] (success, error) in
             if success {
                 print("Saved!")
                 self.addExpenseStatus.textColor = UIColor.green
                 self.addExpenseStatus.text = "Added!"
                 self.newExpenseName.text = ""
-                self.newExpenseCategory.text = ""
                 self.newExpenseAmount.text = ""
                 self.newExpenseDate.text = ""
                 self.newExpenseNotes.text = ""
-                //self.dismiss(animated: true, completion: nil)
+                self.categoryDropdown.text = ""
             }
             else {
                 print("Error.")
@@ -63,7 +69,7 @@ class AddExpenseViewController: UIViewController {
     
     
     @IBAction func doneButton(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        self.performSegue(withIdentifier: "dashboardSegue", sender: nil)
     }
     
     /*

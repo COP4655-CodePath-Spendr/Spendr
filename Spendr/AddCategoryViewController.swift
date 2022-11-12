@@ -28,7 +28,7 @@ class AddCategoryViewController: UIViewController {
     
     
     @IBAction func addCategoryButton(_ sender: Any) {
-        category["name"] = newCategoryName.text
+        category["category"] = newCategoryName.text
         category["color"] = newCategoryColor.text
         category["notes"] = newCategoryNotes.text
         category["user"] = PFUser.current()
