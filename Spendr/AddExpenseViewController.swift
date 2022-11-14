@@ -21,8 +21,9 @@ class AddExpenseViewController: UIViewController {
     @IBOutlet weak var categoryDropdown: DropDown!
     
     var categories = PFObject(className: "Categories")
-    
+    let user = PFUser.current()
     let expense = PFObject(className: "Expenses")
+    var foodExpensesArray = [Double]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +43,7 @@ class AddExpenseViewController: UIViewController {
         expense["amount"] = Double(newExpenseAmount.text!)
         expense["date"] = newExpenseDate.text
         expense["notes"] = newExpenseNotes.text
-        expense["user"] = PFUser.current()
+        expense["user"] = user
         
         expense.saveInBackground { [self] (success, error) in
             if success {

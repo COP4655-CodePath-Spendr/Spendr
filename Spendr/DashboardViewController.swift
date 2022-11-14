@@ -45,12 +45,6 @@ class DashboardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
         let incomeTotal = getincomeAmount().reduce(0, +)
         
         let foodTotal = getFoodExpenses().reduce(0, +)
@@ -88,6 +82,13 @@ class DashboardViewController: UIViewController {
         self.incomeLabel.text = "\(String(format: "%.2f", incomeTotal))"
         self.expensesLabel.text = "\(String(format: "%.2f", expensesTotal))"
         self.budgetLabel.text = "\(String(format: "%.2f", budget))"
+        // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        
         
     }
     
@@ -149,6 +150,7 @@ class DashboardViewController: UIViewController {
         for amount in sampleArray.map({$0.object(forKey: "amount")}){
             self.foodExpensesArray.append(amount as! Double)
         }
+        self.viewDidLoad()
         return self.foodExpensesArray
     }
     
