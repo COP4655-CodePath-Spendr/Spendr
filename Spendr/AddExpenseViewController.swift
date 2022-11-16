@@ -24,6 +24,7 @@ class AddExpenseViewController: UIViewController {
     let user = PFUser.current()
     let expense = PFObject(className: "Expenses")
     var foodExpensesArray = [Double]()
+    let expensesRefresh = DashboardViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +47,7 @@ class AddExpenseViewController: UIViewController {
         expense["user"] = user
         
         expense.saveInBackground { [self] (success, error) in
-            if success {
+            if success  {
                 print("Saved!")
                 self.addExpenseStatus.textColor = UIColor.green
                 self.addExpenseStatus.text = "Added!"

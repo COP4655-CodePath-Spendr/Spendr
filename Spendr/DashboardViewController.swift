@@ -79,9 +79,16 @@ class DashboardViewController: UIViewController {
         numberOfDownloads = [foodData, homeData, autoData, utilitiesData, MiscData, otherData]
         updateChartData()
         
-        self.incomeLabel.text = "\(String(format: "%.2f", incomeTotal))"
-        self.expensesLabel.text = "\(String(format: "%.2f", expensesTotal))"
-        self.budgetLabel.text = "\(String(format: "%.2f", budget))"
+        self.incomeLabel.text = incomeTotal.formatted(.currency(code: "USD"))
+        self.expensesLabel.text = expensesTotal.formatted(.currency(code: "USD"))
+        if budget < 0 {
+            self.budgetLabel.textColor = UIColor.red
+            self.budgetLabel.text = budget.formatted(.currency(code: "USD"))
+        }
+        else {
+            self.budgetLabel.textColor = UIColor.green
+            self.budgetLabel.text = budget.formatted(.currency(code: "USD"))
+        }
         // Do any additional setup after loading the view.
     }
     
@@ -151,7 +158,7 @@ class DashboardViewController: UIViewController {
         for amount in sampleArray.map({$0.object(forKey: "amount")}){
             self.foodExpensesArray.append(amount as! Double)
         }
-        self.viewDidLoad()
+        //self.viewDidLoad()
         return self.foodExpensesArray
     }
     
