@@ -29,14 +29,14 @@ The Spendr app will allow users to budget their income in a simple and straightf
 
 **Required Must-have Stories**
 
-* User can create an account
-* User can login
-* User can logout
-* User can add and update their income
+- [x] User can create an account
+- [x] User can login
+- [x] User can logout
+- [x] User can add and update their income
 * User can view and create categories
-* User can add expense
-* User can divide their income into different categories
-* User can view a chart of their divided income
+- [x] User can add expense
+- [x] User can divide their income into different categories
+- [x] User can view a chart of their divided income
 
 **Optional Nice-to-have Stories**
 
