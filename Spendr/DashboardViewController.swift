@@ -143,6 +143,10 @@ class DashboardViewController: UIViewController {
         
     }
     
+
+    
+    
+    
     
     func getFoodExpenses() -> [Double] {
         var sampleArray = [PFObject]()
