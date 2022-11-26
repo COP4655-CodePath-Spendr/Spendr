@@ -9,10 +9,23 @@
 /* Begin PBXBuildFile section */
 		661E0EA92920352500B42829 /* iOSDropDown.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 661E0EA82920352500B42829 /* iOSDropDown.framework */; };
 		6642E7D7291CC078000F3FA6 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6642E7D6291CC078000F3FA6 /* DashboardViewController.swift */; };
+		6649EA89292DAC640086475B /* FoodExpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6649EA88292DAC640086475B /* FoodExpTableViewCell.swift */; };
 		664A2269291ED1A200E24974 /* AddExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A2268291ED1A200E24974 /* AddExpenseViewController.swift */; };
 		664BC26F291EBC68006C851D /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664BC26E291EBC68006C851D /* Charts.framework */; };
 		667620C6292012B200444F7B /* ViewCategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667620C5292012B200444F7B /* ViewCategoryTableViewController.swift */; };
+		66A36390292A965000189914 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A3638F292A965000189914 /* CategoryCell.swift */; };
+		66B72FC02931854300A3AA2A /* HomeExpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B72FBF2931854300A3AA2A /* HomeExpTableViewCell.swift */; };
+		66B72FC22931855800A3AA2A /* AutoExpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B72FC12931855800A3AA2A /* AutoExpTableViewCell.swift */; };
+		66B72FC42931856D00A3AA2A /* UtilitiesExpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B72FC32931856D00A3AA2A /* UtilitiesExpTableViewCell.swift */; };
+		66B72FC62931857600A3AA2A /* MiscExpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B72FC52931857600A3AA2A /* MiscExpTableViewCell.swift */; };
+		66B72FC82931858000A3AA2A /* OtherExpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B72FC72931858000A3AA2A /* OtherExpTableViewCell.swift */; };
 		66CB9876291F45EB00F3FBF4 /* ViewCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CB9875291F45EB00F3FBF4 /* ViewCategoryViewController.swift */; };
+		66CFC62A292D228E00EC6F81 /* FoodExpensesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CFC629292D228E00EC6F81 /* FoodExpensesTableViewController.swift */; };
+		66CFC62C292D229700EC6F81 /* HomeExpensesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CFC62B292D229700EC6F81 /* HomeExpensesTableViewController.swift */; };
+		66CFC62E292D22A000EC6F81 /* AutoExpensesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CFC62D292D22A000EC6F81 /* AutoExpensesTableViewController.swift */; };
+		66CFC630292D22AD00EC6F81 /* UtilitiesExpensesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CFC62F292D22AD00EC6F81 /* UtilitiesExpensesTableViewController.swift */; };
+		66CFC632292D22B800EC6F81 /* MiscExpensesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CFC631292D22B800EC6F81 /* MiscExpensesTableViewController.swift */; };
+		66CFC634292D22C100EC6F81 /* OtherExpensesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CFC633292D22C100EC6F81 /* OtherExpensesTableViewController.swift */; };
 		66DC16B329122890006D6C66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DC16B229122890006D6C66 /* AppDelegate.swift */; };
 		66DC16B529122890006D6C66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DC16B429122890006D6C66 /* SceneDelegate.swift */; };
 		66DC16B729122890006D6C66 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DC16B629122890006D6C66 /* LoginViewController.swift */; };
@@ -56,10 +69,23 @@
 		39DFAAD03D5065868290B051 /* Pods-SpendrTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpendrTests.release.xcconfig"; path = "Target Support Files/Pods-SpendrTests/Pods-SpendrTests.release.xcconfig"; sourceTree = "<group>"; };
 		661E0EA82920352500B42829 /* iOSDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = iOSDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6642E7D6291CC078000F3FA6 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		6649EA88292DAC640086475B /* FoodExpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodExpTableViewCell.swift; sourceTree = "<group>"; };
 		664A2268291ED1A200E24974 /* AddExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseViewController.swift; sourceTree = "<group>"; };
 		664BC26E291EBC68006C851D /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = System/Library/Frameworks/Charts.framework; sourceTree = SDKROOT; };
 		667620C5292012B200444F7B /* ViewCategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCategoryTableViewController.swift; sourceTree = "<group>"; };
+		66A3638F292A965000189914 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		66B72FBF2931854300A3AA2A /* HomeExpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeExpTableViewCell.swift; sourceTree = "<group>"; };
+		66B72FC12931855800A3AA2A /* AutoExpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoExpTableViewCell.swift; sourceTree = "<group>"; };
+		66B72FC32931856D00A3AA2A /* UtilitiesExpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesExpTableViewCell.swift; sourceTree = "<group>"; };
+		66B72FC52931857600A3AA2A /* MiscExpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiscExpTableViewCell.swift; sourceTree = "<group>"; };
+		66B72FC72931858000A3AA2A /* OtherExpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherExpTableViewCell.swift; sourceTree = "<group>"; };
 		66CB9875291F45EB00F3FBF4 /* ViewCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCategoryViewController.swift; sourceTree = "<group>"; };
+		66CFC629292D228E00EC6F81 /* FoodExpensesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodExpensesTableViewController.swift; sourceTree = "<group>"; };
+		66CFC62B292D229700EC6F81 /* HomeExpensesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeExpensesTableViewController.swift; sourceTree = "<group>"; };
+		66CFC62D292D22A000EC6F81 /* AutoExpensesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoExpensesTableViewController.swift; sourceTree = "<group>"; };
+		66CFC62F292D22AD00EC6F81 /* UtilitiesExpensesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesExpensesTableViewController.swift; sourceTree = "<group>"; };
+		66CFC631292D22B800EC6F81 /* MiscExpensesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiscExpensesTableViewController.swift; sourceTree = "<group>"; };
+		66CFC633292D22C100EC6F81 /* OtherExpensesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherExpensesTableViewController.swift; sourceTree = "<group>"; };
 		66DC16AF29122890006D6C66 /* Spendr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spendr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66DC16B229122890006D6C66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66DC16B429122890006D6C66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +179,19 @@
 				66E56593291E0FA500B6C385 /* AddIncomeViewController.swift */,
 				66F7D5F029254A69000E8BD9 /* CurrencyTableViewController.swift */,
 				66CB9875291F45EB00F3FBF4 /* ViewCategoryViewController.swift */,
+				66B72FC12931855800A3AA2A /* AutoExpTableViewCell.swift */,
+				66CFC62B292D229700EC6F81 /* HomeExpensesTableViewController.swift */,
+				66B72FC32931856D00A3AA2A /* UtilitiesExpTableViewCell.swift */,
+				66CFC62D292D22A000EC6F81 /* AutoExpensesTableViewController.swift */,
+				66CFC62F292D22AD00EC6F81 /* UtilitiesExpensesTableViewController.swift */,
+				66B72FC72931858000A3AA2A /* OtherExpTableViewCell.swift */,
+				66B72FC52931857600A3AA2A /* MiscExpTableViewCell.swift */,
+				66CFC633292D22C100EC6F81 /* OtherExpensesTableViewController.swift */,
+				66CFC631292D22B800EC6F81 /* MiscExpensesTableViewController.swift */,
+				66CFC629292D228E00EC6F81 /* FoodExpensesTableViewController.swift */,
+				66B72FBF2931854300A3AA2A /* HomeExpTableViewCell.swift */,
+				6649EA88292DAC640086475B /* FoodExpTableViewCell.swift */,
+				66A3638F292A965000189914 /* CategoryCell.swift */,
 				664A2268291ED1A200E24974 /* AddExpenseViewController.swift */,
 				6642E7D6291CC078000F3FA6 /* DashboardViewController.swift */,
 				66DC16B829122890006D6C66 /* Main.storyboard */,
@@ -436,15 +475,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6649EA89292DAC640086475B /* FoodExpTableViewCell.swift in Sources */,
+				66CFC62A292D228E00EC6F81 /* FoodExpensesTableViewController.swift in Sources */,
 				66E56594291E0FA500B6C385 /* AddIncomeViewController.swift in Sources */,
 				667620C6292012B200444F7B /* ViewCategoryTableViewController.swift in Sources */,
 				664A2269291ED1A200E24974 /* AddExpenseViewController.swift in Sources */,
 				66F7D5F129254A69000E8BD9 /* CurrencyTableViewController.swift in Sources */,
+				66CFC634292D22C100EC6F81 /* OtherExpensesTableViewController.swift in Sources */,
+				66CFC630292D22AD00EC6F81 /* UtilitiesExpensesTableViewController.swift in Sources */,
 				66DC16B729122890006D6C66 /* LoginViewController.swift in Sources */,
 				66DC16B329122890006D6C66 /* AppDelegate.swift in Sources */,
+				66CFC62E292D22A000EC6F81 /* AutoExpensesTableViewController.swift in Sources */,
 				66DC16B529122890006D6C66 /* SceneDelegate.swift in Sources */,
 				66CB9876291F45EB00F3FBF4 /* ViewCategoryViewController.swift in Sources */,
+				66B72FC22931855800A3AA2A /* AutoExpTableViewCell.swift in Sources */,
 				6642E7D7291CC078000F3FA6 /* DashboardViewController.swift in Sources */,
+				66B72FC02931854300A3AA2A /* HomeExpTableViewCell.swift in Sources */,
+				66A36390292A965000189914 /* CategoryCell.swift in Sources */,
+				66CFC632292D22B800EC6F81 /* MiscExpensesTableViewController.swift in Sources */,
+				66B72FC42931856D00A3AA2A /* UtilitiesExpTableViewCell.swift in Sources */,
+				66CFC62C292D229700EC6F81 /* HomeExpensesTableViewController.swift in Sources */,
+				66B72FC82931858000A3AA2A /* OtherExpTableViewCell.swift in Sources */,
+				66B72FC62931857600A3AA2A /* MiscExpTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

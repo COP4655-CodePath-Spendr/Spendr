@@ -16,14 +16,34 @@ class ViewCategoryViewController: UIViewController {
     }
     
     
-    @IBAction func cancelViewCategory(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+    @IBAction func foodExpensesButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "foodExpensesSegue", sender: nil)
     }
     
     
-    @IBAction func doneButton(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+    @IBAction func autoExpensesButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "autoExpensesSegue", sender: nil)
     }
+    
+    @IBAction func homeExpensesButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "homeExpensesSegue", sender: nil)
+    }
+    
+    
+    @IBAction func utilitiesExpensesButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "utilitiesExpensesSegue", sender: nil)
+    }
+    
+    
+    @IBAction func miscExpensesButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "miscExpensesSegue", sender: nil)
+    }
+    
+    
+    @IBAction func otherExpensesButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "otherExpensesSegue", sender: nil)
+    }
+    
     
     /*
     // MARK: - Navigation

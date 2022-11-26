@@ -1,26 +1,26 @@
 //
-//  ViewCategoryTableViewController.swift
+//  FoodExpensesTableViewController.swift
 //  Spendr
 //
-//  Created by Gina Victoria on 11/12/22.
+//  Created by Gina Victoria on 11/22/22.
 //
 
 import UIKit
 import Parse
 
-
-class ViewCategoryTableViewController: UITableViewController {
+class FoodExpensesTableViewController: UITableViewController {
     
     
-    @IBOutlet var categoryTableView: UITableView!
-    var categories = [PFObject]()
+    @IBOutlet var foodExpTableView: UITableView!
     
+    var expenses = [PFObject]()
+    let user = PFUser.current()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        categoryTableView.delegate = self
-        categoryTableView.dataSource = self
+        foodExpTableView.delegate = self
+        foodExpTableView.dataSource = self
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -31,19 +31,22 @@ class ViewCategoryTableViewController: UITableViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        let query = PFQuery(className: "Categories")
-        query.includeKeys(["color", "category"])
-        query.findObjectsInBackground { (categories, error) in
-            self.categories = categories!
-            self.categoryTableView.reloadData()
+        let query = PFQuery(className: "Expenses")
+        query.includeKeys(["name", "amount", "date", "category", "notes", "user"])
+        query.whereKey("category", equalTo: "Food")
+        query.whereKey("user", equalTo: user as Any)
+        query.findObjectsInBackground { (expenses, error) in
+            self.expenses = expenses!
+            self.foodExpTableView.reloadData()
         }
+        
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return categories.count
+        return expenses.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -53,26 +56,21 @@ class ViewCategoryTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell") as! CategoryCell
-        let sections = categories[indexPath.section]
-        let category = sections["category"] as? String
-        let color = sections["color"] as? String
-        cell.categoryButton.setTitle(category, for: .normal)
-        cell.categoryButton.tintColor = UIColor(named: color!)
-        cell.categoryButton.tag = indexPath.row
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FoodExpTableViewCell") as! FoodExpTableViewCell
+        let sections = expenses[indexPath.section]
+        let expense = sections["name"] as? String
+        let amount = sections["amount"] as? Double
+        let date = sections["date"] as? String
+        let note = sections["notes"] as? String
+        cell.foodExpenseLabel.text = expense
+        cell.foodExpenseAmountLabel.text = amount!.formatted(.currency(code: "USD"))
+        cell.foodExpenseDateLabel.text = date
+        cell.foodExpenseNotesLabel.text = note
+
         // Configure the cell...
-        cell.categoryButton.addTarget(self, action: #selector(whichButton(sender:)), for: .touchUpInside)
 
         return cell
     }
-    
-    @objc func whichButton(sender: UIButton){
-        let buttonNumber = sender.tag
-        print(sender.tag)
-    }
-    
-    
-    
     
 
     /*
