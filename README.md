@@ -33,15 +33,15 @@ The Spendr app will allow users to budget their income in a simple and straightf
 - [x] User can login
 - [x] User can logout
 - [x] User can add and update their income
-* User can view and create categories
-- [x] User can add expense
-- [x] User can divide their income into different categories
+- [x] User can add expenses to pre-defined categories
 - [x] User can view a chart of their divided income
+- [ ] User can use currency exchange feature
+- [ ] User can view their added expenses within the pre-defined categories
 
 **Optional Nice-to-have Stories**
 
-* User can delete categories
-* User can create sub-categories
+- [ ] User can delete categories
+- [ ] User can create sub-categories
 
 ### 2. Screen Archetypes
 
