@@ -437,9 +437,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last Updated" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JK5-Zd-i3o">
-                                <rect key="frame" x="129" y="422" width="132" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Last Updated" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JK5-Zd-i3o">
+                                <rect key="frame" x="129" y="406" width="132" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -447,6 +446,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Dud-9y-6Kf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JK5-Zd-i3o" firstAttribute="centerY" secondItem="Dud-9y-6Kf" secondAttribute="centerY" id="BSM-1Z-R8U"/>
+                            <constraint firstItem="JK5-Zd-i3o" firstAttribute="centerX" secondItem="Dud-9y-6Kf" secondAttribute="centerX" id="hXF-Vj-0My"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rQL-28-u4L"/>
                     <connections>
