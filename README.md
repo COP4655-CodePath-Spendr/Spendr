@@ -36,7 +36,7 @@ The Spendr app will allow users to budget their income in a simple and straightf
 - [x] User can add expenses to pre-defined categories
 - [x] User can view a chart of their divided income
 - [ ] User can use currency exchange feature
-- [ ] User can view their added expenses within the pre-defined categories
+- [x] User can view individual expenses within the categories
 
 **Optional Nice-to-have Stories**
 
@@ -89,6 +89,9 @@ The Spendr app will allow users to budget their income in a simple and straightf
 ### [BONUS] Interactive Prototype
 <a href="https://www.figma.com/proto/CyQlEpk2HPmiVQRvLIRjU5/Spendr?node-id=0%3A1&scaling=scale-down&starting-point-node-id=1%3A2"> Prototype Link </a><br>
 <img src="https://i.imgur.com/faWGUa1.gif" width=320>
+
+### App Demo
+<img src="https://i.imgur.com/qfSkl6s.gif" width=320>
 
 ### Models
 |Property | Type | Description |

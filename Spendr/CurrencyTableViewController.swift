@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CurrencyTableViewController: UITableViewController {
+class CurrencyTableViewController: UIViewController {
     
     @IBOutlet weak var btcPrice: UILabel!
     @IBOutlet weak var ethPrice: UILabel!
