@@ -628,53 +628,6 @@
             </objects>
             <point key="canvasLocation" x="2214" y="1020"/>
         </scene>
-        <!--Categories-->
-        <scene sceneID="RGb-4X-k59">
-            <objects>
-                <tableViewController id="xvc-eD-eto" customClass="ViewCategoryTableViewController" customModule="Spendr" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="U5i-rj-7NQ">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="92" id="7E7-Hy-95D" customClass="CategoryCell" customModule="Spendr" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="50" width="390" height="92"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7E7-Hy-95D" id="VJJ-zF-iCr">
-                                    <rect key="frame" x="0.0" y="0.0" width="390" height="92"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7d-6n-cwQ">
-                                            <rect key="frame" x="4" y="4" width="382" height="35"/>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                        </button>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="w7d-6n-cwQ" firstAttribute="top" secondItem="VJJ-zF-iCr" secondAttribute="top" constant="4" id="UIB-LP-Kva"/>
-                                        <constraint firstAttribute="trailing" secondItem="w7d-6n-cwQ" secondAttribute="trailing" constant="4" id="WUy-W0-ve4"/>
-                                        <constraint firstItem="w7d-6n-cwQ" firstAttribute="leading" secondItem="VJJ-zF-iCr" secondAttribute="leading" constant="4" id="t3V-bL-4Y2"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="categoryButton" destination="w7d-6n-cwQ" id="owy-jf-xmE"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="xvc-eD-eto" id="llU-hS-6nm"/>
-                            <outlet property="delegate" destination="xvc-eD-eto" id="3MK-HT-BhL"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Categories" id="LK4-Gd-pjk"/>
-                    <connections>
-                        <outlet property="categoryTableView" destination="U5i-rj-7NQ" id="Bud-8V-2fO"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="97a-L7-Xvf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4929" y="1784"/>
-        </scene>
         <!--Food Expenses Table View Controller-->
         <scene sceneID="ZEN-bs-2WU">
             <objects>
@@ -1187,22 +1140,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sh5-XO-QTg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4929" y="3538"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="h4m-AX-BeU">
-            <objects>
-                <navigationController id="lAI-Mh-qAx" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="quz-wV-Svw">
-                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="xvc-eD-eto" kind="relationship" relationship="rootViewController" id="DZ5-Mz-Y7r"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vrU-0V-11L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4928.985507246377" y="1019.8660714285713"/>
         </scene>
         <!--View Category View Controller-->
         <scene sceneID="00q-aL-bsC">
