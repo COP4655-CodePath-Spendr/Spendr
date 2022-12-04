@@ -188,7 +188,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="Currency Exchange" buttonSize="large"/>
                                 <connections>
                                     <action selector="viewCurrency:" destination="oOZ-IK-0Du" eventType="touchUpInside" id="tK7-Nh-m9i"/>
-                                    <segue destination="b46-PC-mYK" kind="popoverPresentation" identifier="currencySegue" destinationCreationSelector="currencySegue" popoverAnchorView="uuO-x1-rpK" id="9tG-wS-7tt">
+                                    <segue destination="b46-PC-mYK" kind="popoverPresentation" identifier="currencySegue" destinationCreationSelector="currencySegue" popoverAnchorView="uuO-x1-rpK" id="xa0-IK-ep9">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                     </segue>
                                 </connections>
@@ -462,7 +462,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CWI-IV-T6W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5856.9230769230771" y="1734.5971563981043"/>
+            <point key="canvasLocation" x="4528" y="-2"/>
         </scene>
         <!--Add Income View Controller-->
         <scene sceneID="hrd-VT-a9x">
@@ -629,7 +629,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hDr-bl-tNp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4928" y="985"/>
+            <point key="canvasLocation" x="3665" y="-2"/>
         </scene>
         <!--Food Expenses Table View Controller-->
         <scene sceneID="ZEN-bs-2WU">
