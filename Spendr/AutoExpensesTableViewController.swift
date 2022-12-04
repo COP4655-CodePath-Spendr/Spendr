@@ -71,7 +71,12 @@ class AutoExpensesTableViewController: UITableViewController {
 
         return cell
     }
-
+    
+    
+    @IBAction func doneButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

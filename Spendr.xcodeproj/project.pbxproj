@@ -14,6 +14,7 @@
 		664BC26F291EBC68006C851D /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 664BC26E291EBC68006C851D /* Charts.framework */; };
 		667620C6292012B200444F7B /* ViewCategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667620C5292012B200444F7B /* ViewCategoryTableViewController.swift */; };
 		66A36390292A965000189914 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A3638F292A965000189914 /* CategoryCell.swift */; };
+		66B2B9A9293923130067ED3A /* CurrencyRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B2B9A8293923130067ED3A /* CurrencyRateViewController.swift */; };
 		66B72FC02931854300A3AA2A /* HomeExpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B72FBF2931854300A3AA2A /* HomeExpTableViewCell.swift */; };
 		66B72FC22931855800A3AA2A /* AutoExpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B72FC12931855800A3AA2A /* AutoExpTableViewCell.swift */; };
 		66B72FC42931856D00A3AA2A /* UtilitiesExpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B72FC32931856D00A3AA2A /* UtilitiesExpTableViewCell.swift */; };
@@ -74,6 +75,7 @@
 		664BC26E291EBC68006C851D /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = System/Library/Frameworks/Charts.framework; sourceTree = SDKROOT; };
 		667620C5292012B200444F7B /* ViewCategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCategoryTableViewController.swift; sourceTree = "<group>"; };
 		66A3638F292A965000189914 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		66B2B9A8293923130067ED3A /* CurrencyRateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRateViewController.swift; sourceTree = "<group>"; };
 		66B72FBF2931854300A3AA2A /* HomeExpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeExpTableViewCell.swift; sourceTree = "<group>"; };
 		66B72FC12931855800A3AA2A /* AutoExpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoExpTableViewCell.swift; sourceTree = "<group>"; };
 		66B72FC32931856D00A3AA2A /* UtilitiesExpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesExpTableViewCell.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				66B72FC12931855800A3AA2A /* AutoExpTableViewCell.swift */,
 				66CFC62B292D229700EC6F81 /* HomeExpensesTableViewController.swift */,
 				66B72FC32931856D00A3AA2A /* UtilitiesExpTableViewCell.swift */,
+				66B2B9A8293923130067ED3A /* CurrencyRateViewController.swift */,
 				66CFC62D292D22A000EC6F81 /* AutoExpensesTableViewController.swift */,
 				66CFC62F292D22AD00EC6F81 /* UtilitiesExpensesTableViewController.swift */,
 				66B72FC72931858000A3AA2A /* OtherExpTableViewCell.swift */,
@@ -484,6 +487,7 @@
 				66CFC634292D22C100EC6F81 /* OtherExpensesTableViewController.swift in Sources */,
 				66CFC630292D22AD00EC6F81 /* UtilitiesExpensesTableViewController.swift in Sources */,
 				66DC16B729122890006D6C66 /* LoginViewController.swift in Sources */,
+				66B2B9A9293923130067ED3A /* CurrencyRateViewController.swift in Sources */,
 				66DC16B329122890006D6C66 /* AppDelegate.swift in Sources */,
 				66CFC62E292D22A000EC6F81 /* AutoExpensesTableViewController.swift in Sources */,
 				66DC16B529122890006D6C66 /* SceneDelegate.swift in Sources */,

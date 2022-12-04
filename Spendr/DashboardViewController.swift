@@ -120,11 +120,10 @@ class DashboardViewController: UIViewController {
     @IBAction func addExpense(_ sender: Any) {
         self.performSegue(withIdentifier: "addExpenseSegue", sender: nil)
     }
+
     
-    
-    
-    @IBAction func addCategory(_ sender: Any) {
-        self.performSegue(withIdentifier: "addCategorySegue", sender: nil)
+    @IBAction func viewCurrency(_ sender: Any) {
+        self.performSegue(withIdentifier: "currencySegue", sender: nil)
     }
     
     
